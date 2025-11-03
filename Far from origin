@@ -1,0 +1,17 @@
+def func(x1,y1,x2,y2):
+    
+    d1= x1*x1 + y1*y1
+    d2=x2*x2+ y2*y2
+    
+    if d1>d2:
+        return "ALEX"
+    elif d2>d1:
+        return "BOB"
+    else:
+        return "EQUAL"
+    
+    
+t=int(input())
+for _ in range(t):
+    x1,y1,x2,y2=map(int,input().split())
+    print(func(x1,y1,x2,y2))
