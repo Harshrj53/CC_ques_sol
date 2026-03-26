@@ -1,0 +1,7 @@
+def func(x,y):
+    return (abs(x-y)+1)//2
+
+t=int(input())
+for _ in range(t):
+    x,y=map(int,input().split())
+    print(func(x,y))
